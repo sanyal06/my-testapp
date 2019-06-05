@@ -12,12 +12,4 @@ node{
       Thanks
       Abhijeet''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'traningsanyal06@gmail.com'
    }
-   stage('Slack Notification'){
-       slackSend baseUrl: 'https://hooks.slack.com/services/',
-       channel: '#jenkins-pipeline-demo',
-       color: 'good',
-       message: 'Welcome to Jenkins, Slack!',
-       teamDomain: 'javahomecloud',
-       tokenCredentialId: 'slack-demo'
-   }
 }
